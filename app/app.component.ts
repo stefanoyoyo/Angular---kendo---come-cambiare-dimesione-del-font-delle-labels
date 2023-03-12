@@ -13,43 +13,18 @@ import { Component } from '@angular/core';
           </kendo-chart-title>
           <kendo-chart-series-item
             type="donut" [data]="data"
-            font="10px sans-serif"
             categoryField="kind" field="share">
           <!-- QUI CAMBIO LA DIMENSIONE DEL FONT -->
           <kendo-chart-series-item-labels
             [content]="labelContent"
-            font="50px sans-serif"
+            [font]="'25px sans-serif'"
             position="outsideEnd"
             color="black" background="none">
           </kendo-chart-series-item-labels>
         </kendo-chart-series-item>
       </kendo-chart-series>
       <kendo-chart-legend [visible]="false"></kendo-chart-legend>
-    </kendo-chart>
-  <div style="height: 150px">
-    <kendo-chart style="height: 100%">
-      <kendo-chart-series>
-          <kendo-chart-title 
-              text="By Source"
-              color="#007AB2"
-              font="10px sans-serif"
-              >
-          </kendo-chart-title>
-          <kendo-chart-series-item
-            type="donut" [data]="data"
-            font="10px sans-serif"
-            categoryField="kind" field="share">
-          <kendo-chart-series-item-labels
-            [content]="labelContent"
-            position="outsideEnd"
-            color="black" background="none">
-          </kendo-chart-series-item-labels>
-        </kendo-chart-series-item>
-      </kendo-chart-series>
-      <kendo-chart-legend [visible]="false"></kendo-chart-legend>
-    </kendo-chart>
-    </div>
-  `
+    </kendo-chart>`
 })
 export class AppComponent {
   public data: any[] = [{
