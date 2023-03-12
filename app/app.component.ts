@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
       <kendo-chart>
+
+      <!-- SERIE DEL GRAFICO -->
       <kendo-chart-series>
           <kendo-chart-title 
               text="By Source"
@@ -23,6 +25,8 @@ import { Component } from '@angular/core';
           </kendo-chart-series-item-labels>
         </kendo-chart-series-item>
       </kendo-chart-series>
+
+      <!-- LEGENDA -->
       <kendo-chart-legend [visible]="false"></kendo-chart-legend>
     </kendo-chart>`
 })
