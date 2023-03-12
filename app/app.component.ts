@@ -7,12 +7,16 @@ import { Component } from '@angular/core';
 
       <!-- SERIE DEL GRAFICO -->
       <kendo-chart-series>
+
+          <!-- TITOLO -->
           <kendo-chart-title 
               text="By Source"
               color="#007AB2"
               font="24pt sans-serif"
               >
           </kendo-chart-title>
+
+          <!-- COMPONENTE PER LE SERIE -->
           <kendo-chart-series-item
             type="donut" 
             [data]="data"
@@ -26,7 +30,7 @@ import { Component } from '@angular/core';
             position="outsideEnd"
             color="black" 
             background="none">
-            
+
           </kendo-chart-series-item-labels>
         </kendo-chart-series-item>
       </kendo-chart-series>
