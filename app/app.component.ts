@@ -14,14 +14,19 @@ import { Component } from '@angular/core';
               >
           </kendo-chart-title>
           <kendo-chart-series-item
-            type="donut" [data]="data"
-            categoryField="kind" field="share">
+            type="donut" 
+            [data]="data"
+            categoryField="kind" 
+            field="share">
+
           <!-- QUI CAMBIO LA DIMENSIONE DEL FONT -->
           <kendo-chart-series-item-labels
             [content]="labelContent"
             [font]="'25px sans-serif'"
             position="outsideEnd"
-            color="black" background="none">
+            color="black" 
+            background="none">
+            
           </kendo-chart-series-item-labels>
         </kendo-chart-series-item>
       </kendo-chart-series>
